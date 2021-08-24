@@ -13,9 +13,21 @@
             <input type="text" placeholder="New task..." v-model="task">
             <button v-on:click="addTask">Add task</button>
             <hr>
+            <h4>To do list:</h4>
             <ul>
-                <li v-for="task in taskList">
-                    Task: {{task.title}} - Done? {{task.done}}
+                <li v-for="incomplete in showIncomplete">
+                    {{incomplete.title}}
+                </li>
+            </ul>
+            <hr>
+            <!-- <h4>Completed:</h4> -->
+            <h4>Tasks by title</h4>
+            <ul>
+                <!-- <li v-for="complete in showCompleted">
+                    {{complete.title}}
+                </li> -->
+                <li v-for="item in displayByTitle">
+                    {{item.title}}
                 </li>
             </ul>
         </div>
