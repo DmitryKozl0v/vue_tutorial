@@ -8,7 +8,7 @@
 
 <script>
 
-import Child from './components/child';
+import Child from '../components/child';
 
 export default {
     name: 'Person',
