@@ -24,6 +24,8 @@
     </template>
   </SlotComponent>
   -->
+
+  <Person></Person>
   </div>
 </template>
 
@@ -35,11 +37,13 @@
 // SLOTS LESSON CODE
 // import SlotComponent from './components/slotComponent'
 
+import Person from './components/person'
+
 export default {
   name: 'App',
   components: {
     // SlotComponent
-    // Person
+    Person
     // Users
   },
   data() {

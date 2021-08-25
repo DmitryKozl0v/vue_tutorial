@@ -1,8 +1,7 @@
 <template>
     <div>
-        <p>Your name is: {{name}}</p>
-        <p>Your age is: {{age}}</p>
-        <Child :name="name" :age="age"></Child>
+        <Button @click="display = true">Display child comp</Button>
+        <Child  @close="display = false" v-show="display"></Child>
     </div>
 </template>
 
@@ -15,8 +14,11 @@ export default {
     components: {
         Child
     },
-    props: ['name', 'age'],
-    
+    data() {
+        return {
+            display: false
+        }
+    },
 }
 </script>
 
