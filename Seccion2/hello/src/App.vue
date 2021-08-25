@@ -25,7 +25,16 @@
   </SlotComponent>
   -->
 
+  <!-- EVENTS LESSON CODE
   <Person></Person>
+  -->
+  <Element type="h1">Element's text</Element>
+  <Element type="h2">Element's text</Element>
+  <Element type="h3">Element's text</Element>
+  <Element type="aside">Element's text</Element>
+  <Element type="hr">Element's text</Element>
+  <Element type="p">Element's text</Element>
+
   </div>
 </template>
 
@@ -37,14 +46,18 @@
 // SLOTS LESSON CODE
 // import SlotComponent from './components/slotComponent'
 
-import Person from './components/person'
+// EVENTS LESSON CODE
+// import Person from './components/person'
+
+import Element from './components/element'
 
 export default {
   name: 'App',
   components: {
     // SlotComponent
-    Person
+    // Person
     // Users
+    Element
   },
   data() {
     return {
