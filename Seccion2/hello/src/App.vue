@@ -12,6 +12,18 @@
       >
       </Users>
   -->
+
+  <!-- SLOTS LESSON CODE
+  <SlotComponent>
+    Hello from the slot
+    <template slot="slot2">
+      Hello from the slot 2
+    </template>
+    <template slot="slot3">
+      Hello from the slot 3
+    </template>
+  </SlotComponent>
+  -->
   </div>
 </template>
 
@@ -20,9 +32,14 @@
 // import Users from './components/users'
 // import axios from 'axios'
 
+// SLOTS LESSON CODE
+// import SlotComponent from './components/slotComponent'
+
 export default {
   name: 'App',
   components: {
+    // SlotComponent
+    // Person
     // Users
   },
   data() {
