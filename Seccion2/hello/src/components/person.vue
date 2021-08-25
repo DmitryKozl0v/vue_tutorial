@@ -2,7 +2,7 @@
     <div>
         <p>Your name is: {{name}}</p>
         <p>Your age is: {{age}}</p>
-        <Child :name="name" :child="age"></Child>
+        <Child :name="name" :age="age"></Child>
     </div>
 </template>
 
