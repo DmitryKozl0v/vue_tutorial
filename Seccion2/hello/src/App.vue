@@ -28,13 +28,19 @@
   <!-- EVENTS LESSON CODE
   <Person></Person>
   -->
+
+  <!-- RENDER LESSON CODE
   <Element type="h1">Element's text</Element>
   <Element type="h2">Element's text</Element>
   <Element type="h3">Element's text</Element>
   <Element type="aside">Element's text</Element>
   <Element type="hr">Element's text</Element>
   <Element type="p">Element's text</Element>
+  -->
 
+  <!-- SCOPED CSS LESSON CODE
+  <h1 >Parent component</h1>
+  -->
   </div>
 </template>
 
@@ -49,7 +55,8 @@
 // EVENTS LESSON CODE
 // import Person from './components/person'
 
-import Element from './components/element'
+// RENDER LESSON CODE
+// import Element from './components/element'
 
 export default {
   name: 'App',
@@ -57,7 +64,7 @@ export default {
     // SlotComponent
     // Person
     // Users
-    Element
+    // Element
   },
   data() {
     return {

@@ -15,5 +15,9 @@ export default {
 </script>
 
 <style scoped>
-
+/* SCOPED CSS LESSON CODE
+h1{
+    Color: red;
+}
+*/
 </style>
