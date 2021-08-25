@@ -3,19 +3,27 @@ import Vuex from 'vuex'
 
 Vue.use(Vuex)
 
+// INTRO LESSON CODE
+// export const store = new Vuex.Store({
+//     state: {
+//         counter: 0
+//     },
+//     mutations:{
+//         increase(state){
+//             state.counter++
+//         },
+//         decrease(state){
+//             state.counter--
+//         },
+//         restart(state){
+//             state.counter = 0
+//         }
+//     }
+// })
+
 export const store = new Vuex.Store({
     state: {
-        counter: 0
+        name: 'Gonza',
+        age: 24,
     },
-    mutations:{
-        increase(state){
-            state.counter++
-        },
-        decrease(state){
-            state.counter--
-        },
-        restart(state){
-            state.counter = 0
-        }
-    }
 })
