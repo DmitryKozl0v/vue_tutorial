@@ -10,14 +10,15 @@
     <p>{{name}}</p>
     <p>{{age}}</p>
     -->
+    <!-- MAPGETTERS LESSON CODE
     <Users></Users>
+     -->
   </div>
 </template>
 
 <script>
 
 // INTRO LESSON CODE
-// import Counter from './components/counter'
 // import Reader from './components/reader'
 
 // MAPSTATE LESSON CODE
@@ -30,10 +31,9 @@ export default {
   components: {
     // Counter,
     // Reader
-    Users
+    // Users
   },
-  // MAPSTATE LESSON CODE
-  // computed: mapState(['name', 'age'])
+  computed: {},
 }
 </script>
 

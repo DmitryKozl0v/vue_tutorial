@@ -1,10 +1,12 @@
 <template>
     <div>
-        <h1>Users</h1>
+        <h1>MapGetters example</h1>
         <ul>
-            <li v-bind:key="user.name" v-for="user in getUsers">Name: {{user.name}} - Age: {{user.age}} </li>
+            <li v-bind:key="user.name" v-for="user in getUsers">
+                Name: {{user.name}} - Age: {{user.age}}
+            </li>
         </ul>
-        <p>Active users: {{activeUsersCount}}</p>
+        <p>Active user count: {{getActiveUsersList}}</p>
     </div>
 </template>
 
