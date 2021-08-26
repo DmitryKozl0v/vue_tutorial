@@ -6,7 +6,7 @@
                 Name: {{user.name}} - Age: {{user.age}}
             </li>
         </ul>
-        <p>Active user count: {{getActiveUsersList}}</p>
+        <p>Active user count: {{activeUsersCount}}</p>
     </div>
 </template>
 

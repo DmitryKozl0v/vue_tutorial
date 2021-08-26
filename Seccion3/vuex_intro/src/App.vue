@@ -11,8 +11,8 @@
     <p>{{age}}</p>
     -->
     <!-- MAPGETTERS LESSON CODE
-    <Users></Users>
      -->
+    <Users></Users>
   </div>
 </template>
 
@@ -31,9 +31,8 @@ export default {
   components: {
     // Counter,
     // Reader
-    // Users
+    Users
   },
-  computed: {},
 }
 </script>
 
