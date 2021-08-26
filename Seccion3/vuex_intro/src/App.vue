@@ -5,10 +5,12 @@
     <Counter></Counter>
     <Reader></Reader>
     -->
-
+    <!-- MAPSTATE LESSON CODE
     <h1>Vuex MapsState example</h1>
     <p>{{name}}</p>
     <p>{{age}}</p>
+    -->
+    <Users></Users>
   </div>
 </template>
 
@@ -18,15 +20,20 @@
 // import Counter from './components/counter'
 // import Reader from './components/reader'
 
-import { mapState } from 'vuex'
+// MAPSTATE LESSON CODE
+// import { mapState } from 'vuex'
+
+import Users from './components/users'
 
 export default {
   name: 'App',
   components: {
     // Counter,
     // Reader
+    Users
   },
-  computed: mapState(['name', 'age']),
+  // MAPSTATE LESSON CODE
+  // computed: mapState(['name', 'age'])
 }
 </script>
 

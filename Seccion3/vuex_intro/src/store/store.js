@@ -21,9 +21,40 @@ Vue.use(Vuex)
 //     }
 // })
 
+// MAPSTATE LESSON CODE
+// export const store = new Vuex.Store({
+//     state: {
+//         name: 'Gonza',
+//         age: 24,
+//     },
+// })
+
 export const store = new Vuex.Store({
     state: {
-        name: 'Gonza',
-        age: 24,
+        users: [
+        {
+            name: 'Gonza',
+            age: '24',
+            active: true,
+        },
+        {
+            name: 'Sofia',
+            age: '25',
+            active: false,
+        },
+        {
+            name: 'Matias',
+            age: '23',
+            active: false,
+        },        
+        ]
     },
+    getters:{
+        activeUsersCount: state => {
+            return state.users.filter(users => users.active).length
+        },
+        getUsers: state => {
+            return state.users
+        }
+    }
 })
