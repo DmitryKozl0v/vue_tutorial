@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import axios from 'axios'
 
 Vue.use(Vuex)
 
@@ -52,33 +53,52 @@ Vue.use(Vuex)
 //     }
 // })
 
-export const store = new Vuex.Store({
-    state: {
+// MUTATIONS LESSON CODE
+// export const store = new Vuex.Store({
+//     state: {
 
-        users: [
-        {
-            name: 'Gonza',
-            age: '24',
-            active: true,
-        },
-        {
-            name: 'Sofia',
-            age: '25',
-            active: false,
-        },
-        {
-            name: 'Matias',
-            age: '23',
-            active: false,
-        },        
-        ]
+//         users: [
+//         {
+//             name: 'Gonza',
+//             age: '24',
+//             active: true,
+//         },
+//         {
+//             name: 'Sofia',
+//             age: '25',
+//             active: false,
+//         },
+//         {
+//             name: 'Matias',
+//             age: '23',
+//             active: false,
+//         },        
+//         ]
+//     },
+//     getters:{
+//         activeUsersCount: state => {
+//             return state.users.filter(users => users.active).length
+//         },
+//         getUsers: state => {
+//             return state.users
+//         }
+//     }
+// })
+
+export const store = new Vuex.Store({
+    state:{
+        users:null
     },
-    getters:{
-        activeUsersCount: state => {
-            return state.users.filter(users => users.active).length
-        },
-        getUsers: state => {
-            return state.users
+    mutations:{
+        async reqUsers(state) {
+            const r = await axios.get('https://jsonplaceholder.typicode.com/users')
+            state.users = r.data
+            console.log(state.users)        
         }
-    }
+    },
+    actions:{
+        getUsers(context){
+            context.commit('reqUsers')
+        }
+    },
 })

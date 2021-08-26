@@ -5,14 +5,21 @@
     <Counter></Counter>
     <Reader></Reader>
     -->
+
     <!-- MAPSTATE LESSON CODE
     <h1>Vuex MapsState example</h1>
     <p>{{name}}</p>
     <p>{{age}}</p>
     -->
+
     <!-- MAPGETTERS LESSON CODE
      -->
+
+     <!-- MUTATIONS LESSON CODE
     <Users></Users>
+    -->
+
+    <Home></Home>
   </div>
 </template>
 
@@ -24,14 +31,18 @@
 // MAPSTATE LESSON CODE
 // import { mapState } from 'vuex'
 
-import Users from './components/users'
+// MUTATIONS LESSON CODE
+// import Users from './components/users'
+
+import Home from './components/home'
 
 export default {
   name: 'App',
   components: {
     // Counter,
     // Reader
-    Users
+    // Users
+    Home
   },
 }
 </script>
