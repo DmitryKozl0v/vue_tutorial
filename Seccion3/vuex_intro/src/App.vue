@@ -6,29 +6,35 @@
     <Reader></Reader>
     -->
 
-    <!-- MAPSTATE LESSON
+    <!-- MAPSTATE LESSON CODE
     <h1>Vuex MapsState example</h1>
     <p>{{name}}</p>
     <p>{{age}}</p>
     -->
+    <!-- MAPGETTERS LESSON CODE
     <Users></Users>
+     -->
   </div>
 </template>
 
 <script>
 
 // INTRO LESSON CODE
-// import Counter from './components/counter'
 // import Reader from './components/reader'
 
-import Users from './components/users'
+// MUTATIONS LESSON CODE
+// import Counter from './components/counter'
+
+
+// MAPGETTERS LESSON CODE
+// import Users from './components/users'
 
 export default {
   name: 'App',
   components: {
     // Counter,
     // Reader
-    Users
+    // Users
   },
   computed: {},
 }
