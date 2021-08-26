@@ -6,9 +6,12 @@
     <Reader></Reader>
     -->
 
+    <!-- MAPSTATE LESSON
     <h1>Vuex MapsState example</h1>
     <p>{{name}}</p>
     <p>{{age}}</p>
+    -->
+    <Users></Users>
   </div>
 </template>
 
@@ -18,15 +21,16 @@
 // import Counter from './components/counter'
 // import Reader from './components/reader'
 
-import { mapState } from 'vuex'
+import Users from './components/users'
 
 export default {
   name: 'App',
   components: {
     // Counter,
     // Reader
+    Users
   },
-  computed: mapState(['name', 'age']),
+  computed: {},
 }
 </script>
 

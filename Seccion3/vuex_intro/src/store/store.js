@@ -23,7 +23,29 @@ Vue.use(Vuex)
 
 export const store = new Vuex.Store({
     state: {
-        name: 'Gonza',
-        age: 24,
+        users: 
+        [
+            {
+                name: 'Gonza',
+                age: 24,
+                active: true
+            },
+            {
+                name: 'Sofia',
+                age: 25,
+                active: false
+            },
+            {
+                name: 'Matias',
+                age: 23,
+                active: false
+            }
+        ],
     },
+    getters:{
+        getActiveUsersList: state => state.users.filter( user => user.active).length,
+
+        getUsers: state => state.users
+
+    }
 })
